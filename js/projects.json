@@ -1,0 +1,9 @@
+var projects = {
+     [{
+        title: 'string',
+        dates: 'string',
+        description: 'string',
+        images: [],
+        display: function () {}
+     }]
+}
