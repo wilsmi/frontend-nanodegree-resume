@@ -1,5 +1,3 @@
-//See this for help https://github.com/cherylcourt/resume/blob/gh-pages/js/resumeBuilder.js
-
 // JavaScript variables to build the HTML content
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -53,14 +51,14 @@ for (i in formattedContactInfo) {
 })();
 
 
-
+// PROJECTS SECTION
 (function displayProjects() {
     if (projects.projects.length > 0) {
         for (i in projects.projects) {
             $("#projects").append(HTMLprojectStart);
 
             var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
-            var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].datesWorked);
+            var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
             var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
 
             $(".project-entry:last").append(formattedProjectTitle);
@@ -71,32 +69,51 @@ for (i in formattedContactInfo) {
                 var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[img]);
                 $(".project-entry:last").append(formattedProjectImage);
             }
-
-
         }
     }
 })();
 
+// EDUCATION SECTION
+(function displayEducation() {
+    if (education.schools.length > 0 || education.onlineCourses.length > 0) {
+        for (i in education.schools) {
+            $("#education").append(HTMLschoolStart);
 
-//$('#main').append(formattedSkills);
-//$('#main').append(formattedWork);
-//$('#main').append(formattedEducation);
+            var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#", education.schools[i].url);
+            var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
+            var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].datesAttended);
+            var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
+            var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
+            var formattedSchoolMinor = HTMLschoolMinor.replace("%data%", education.schools[i].minor);
 
-/*
-if (bio.skills.length > 0) {
-    $('#header').append(HTMLskillsStart);
+            $(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree);
+            $(".education-entry:last").append(formattedSchoolDates);
+            $(".education-entry:last").append(formattedSchoolLocation);
+            $(".education-entry:last").append(formattedSchoolMajor);
+            $(".education-entry:last").append(formattedSchoolMinor);
+        }
 
-    var formattedSkill = HTMLskills.replace("%data"),
-        bio.skills[0];
+        if (education.onlineCourses.length > 0) {
+            $("#education").append(HTMLonlineClasses);
+            for (i in education.onlineCourses) {
+                $("#education").append(HTMLschoolStart);
+                var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
+                var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+                var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].completed);
+                var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
 
-    formattedSkill = HTMLskills.replace("%data"), bio.skills[1];
+                $(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
+                $(".education-entry:last").append(formattedOnlineDates);
+                $(".education-entry:last").append(formattedOnlineURL);
+            }
+        }
 
-    formattedSkill = HTMLskills.replace("%data"), bio.skills[2];
+    }
+})();
 
-    formattedSkill = HTMLskills.replace("%data"), bio.skills[3];
 
-    $('#skills').append(formattedSkill);
-}*/
+// Add map with locations
+$('#mapDiv').append(googleMap);
 
 
 var charEscape = function (_html) {
@@ -107,3 +124,5 @@ var charEscape = function (_html) {
 
     return newHTML;
 };
+
+//See this for help https://github.com/cherylcourt/resume/blob/gh-pages/js/resumeBuilder.js
