@@ -1,0 +1,25 @@
+var projects = {
+    projects: [
+        {
+            title: "Created Conway's Game of Life",
+            dates: "December 2016 - January 2017",
+            description: "Pluralsight's Advanced JavaScript course has a play-by-play which walks through creating Conway's Game of Life in the browser.",
+            images: ['images/project-images/game-of-life.png'],
+            gifs: []
+     },
+        {
+            title: "Angular Phonecat Tutorial",
+            dates: "December 2016 - January 2017",
+            description: "Walked through the Angular 1 Tutorial via https://docs.angularjs.org/tutorial - learning GitHub along the way.",
+            images: ['images/project-images/angular-tutorial-main.png'],
+            gifs: ['images/project-images/angular-phonecat.gif']
+     },
+        {
+            title: "Angular2 First Look",
+            dates: "March 2016 - May 2016",
+            description: "Completed Angular2 First Look course with John Papa to learn Angular2 fundamentals, translating Angular1 knowledge to Angular2.",
+            images: ['images/project-images/7a2-first-look-still.png'],
+            gifs: ['images/project-images/7a2-first-look-app.gif']
+     },
+        ]
+};

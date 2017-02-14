@@ -1,0 +1,55 @@
+ var education = {
+     schools: [
+         {
+             name: "Franklin University",
+             location: "Columbus, Ohio",
+             degree: "B.S. Information Technology",
+             major: ['Information Technology'],
+             minor: ['Windows Server'],
+             datesAttended: 2014,
+             url: "www.franklin.edu",
+     },
+         {
+             name: "Columbus State",
+             location: "Columbus, Ohio",
+             degree: "A.T. Network Administration",
+             major: ['Networking'],
+             minor: ['Security'],
+             datesAttended: 2011,
+             url: "http://www.cscc.edu/",
+     }
+     ],
+     onlineCourses: [
+         {
+             school: "Udacity",
+             title: "JavaScript",
+             completed: "February 2017",
+             url: "https://classroom.udacity.com/courses/ud804"
+     },
+         {
+             school: "Pluralsight",
+             title: "Angular Path",
+             completed: "February 2017",
+             url: "https://app.pluralsight.com/paths/skills/angular-js"
+     },
+         {
+             school: "CodeSchool",
+             title: "Try jQuery",
+             completed: "July 2016",
+             url: "https://www.codeschool.com/courses/try-jquery"
+     },
+         {
+             school: "CodeSchool",
+             title: "Shaping Up with Angular JS",
+             completed: "February 2015",
+             url: "https://www.codeschool.com/courses/shaping-up-with-angular-js"
+     },
+         {
+             school: "Pluralsight",
+             title: "JavaScript Path",
+             completed: "February 2017",
+             url: "https://app.pluralsight.com/paths/skills/javascript"
+     },
+
+     ]
+ }

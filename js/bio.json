@@ -1,0 +1,14 @@
+var bio = {
+    name: "William Smith",
+    role: "ServiceNow admin/dev",
+    contacts: {
+        mobile: "614.282.0917",
+        email: "william.smith3@gmail.com",
+        github: "wilsmi",
+        twitter: "@willsmith25",
+        location: "Columbus, Ohio"
+    },
+    biopic: "images/niceme_bg-BW.jpg",
+    welcomeMessage: "I'm currently working as an IT Consultant for Sogeti USA.  Thanks for stopping by!",
+    skills: ['HTML5/CSS3/JavaScript; Angular', 'ITIL Foundations', 'Agile methodology', 'Six Sigma Yellow Belt'],
+};
