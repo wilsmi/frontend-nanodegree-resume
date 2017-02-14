@@ -2,7 +2,6 @@ var bio = {
     name: "William Smith",
     role: "ServiceNow admin/dev",
     contacts: {
-        mobile: "614.282.0917",
         email: "william.smith3@gmail.com",
         github: "wilsmi",
         twitter: "@willsmith25",
