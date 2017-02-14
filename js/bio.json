@@ -4,13 +4,11 @@ var bio = {
     contacts: {
         mobile: "614.282.0917",
         email: "william.smith3@gmail.com",
-        github: "https://github.com/wilsmi",
+        github: "wilsmi",
         twitter: "@willsmith25",
         location: "Columbus, Ohio"
     },
-    picture: "images/niceme_bg-BW.jpg",
-    welcomeMessage: "I'm currently working as an IT Consultant in Columbus, Ohio, USA.  Thanks for stopping by",
-    skills: ['HTML5/CSS3', 'JavaScript Ninja', 'Python'],
-    URL: "",
-    display: function () {}
+    biopic: "images/niceme_bg-BW.jpg",
+    welcomeMessage: "I'm currently working as an IT Consultant for Sogeti USA.  Thanks for stopping by!",
+    skills: ['HTML5/CSS3/JavaScript; Angular', 'ITIL Foundations', 'Agile methodology', 'Six Sigma Yellow Belt'],
 };

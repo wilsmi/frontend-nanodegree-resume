@@ -1,10 +1,18 @@
 var work = {
-    jobs: [{
-        employer: "Sogeti USA",
-        title: "Consultant",
-        location: "Columbus, Ohio",
-        dates: "2011 - Present",
-        description: "Sogeti Consultant in the Cloud Practice with more than 7 years of experience in service level management leveraging the complete range of ITIL practices. He is a certified ServiceNow Systems Administrator and ITIL Foundations holder that has led teams in areas of Incident, Problem, Change, and Release management utilizing the ServiceNow platform. He has developed enterprise-level solutions with the ServiceNow platform to solve complex business problems by integrating/upgrading processes and procedures."
-}],
-    display: function () {}
-}
+    jobs: [
+        {
+            employer: "Sogeti USA",
+            title: "Consultant",
+            location: "Columbus, Ohio",
+            dates: "October 2014 - Present",
+            description: "Sogeti Consultant in the Cloud Practice with more than 7 years of experience in service level management leveraging the complete range of ITIL practices. He is a certified ServiceNow Systems Administrator and ITIL Foundations holder that has led teams in areas of Incident, Problem, Change, and Release management utilizing the ServiceNow platform. He has developed enterprise-level solutions with the ServiceNow platform to solve complex business problems by integrating/upgrading processes and procedures."
+        },
+        {
+            employer: "Cardinal Health",
+            title: "Nuclear Analyst",
+            location: "Dublin, Ohio",
+            dates: "June 2009 – October 2014",
+            description: "Resolved an average of 33 issues weekly for 160 pharmacies nationwide. Resolved ~38 issues per week for thousands of customers serviced by Cardinal Health nuclear pharmacies."
+    }
+    ]
+};

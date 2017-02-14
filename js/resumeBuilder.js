@@ -1,67 +1,86 @@
-/*var bio = {
-    'name': "William Smith",
-    'role': "ServiceNow admin/dev",
-    'contacts': {
-        'mobile': "614.282.0917",
-        'email': "william.smith3@gmail.com",
-        'github': "https://github.com/wilsmi",
-        'twitter': "@willsmith25",
-        'location': "Columbus, Ohio",
-    },
-    'welcomeMessage': "I'm currently working as an IT Consultant in Columbus, Ohio, USA.  Thanks for stopping by",
-    'skills': ['HTML5/CSS3', 'JavaScript Ninja', 'Python'],
-    'biopic': "images/fry.jpg"
-};*/
-
-var work = {
-    "jobs": [
-        {
-            employer: "Sogeti USA",
-            title: "Consultant",
-            location: "Columbus, Ohio",
-            dates: "2011 - Present",
-            description: "Sogeti Consultant in the Cloud Practice with more than 7 years of experience in service level management leveraging the complete range of ITIL practices. He is a certified ServiceNow Systems Administrator and ITIL Foundations holder that has led teams in areas of Incident, Problem, Change, and Release management utilizing the ServiceNow platform. He has developed enterprise-level solutions with the ServiceNow platform to solve complex business problems by integrating/upgrading processes and procedures."
-},
-],
-};
-
-
-var education = {
-    schools: [{
-        name: "Franklin University",
-        location: "Columbus, Ohio",
-        degree: "B.S. Information Technology",
-        majors: ['Information Tech'],
-        dates: 2016 - 03 - 15,
-        url: "www.franklin.edu",
-     }],
-    onlineCourses: [{
-        school: "Udacity",
-        title: "JavaScript",
-        completed: "February 2017",
-        url: "https://classroom.udacity.com/courses/ud804"
-     }],
-    display: function () {}
-};
-
+//See this for help https://github.com/cherylcourt/resume/blob/gh-pages/js/resumeBuilder.js
 
 // JavaScript variables to build the HTML content
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedWork = HTMLworkLocation.replace("%data", work.jobs[0].title);
-var formattedEducation = HTMLheaderRole.replace("%data%", bio.role);
-var formattedSkills =
+var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
+var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
-    // jQuery to append the above items to the page
-    $("#header").append(formattedName);
-$('#header').append(formattedRole);
-$('#main').append(formattedSkills);
-$('#main').append(formattedWork);
-$('#main').append(formattedEducation);
+var formattedContactInfo = [];
+formattedContactInfo.push(HTMLemail.replace("%data%", bio.contacts.email));
+formattedContactInfo.push(HTMLgithub.replace("%data%", bio.contacts.github));
+formattedContactInfo.push(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+formattedContactInfo.push(HTMLlocation.replace("%data%", bio.contacts.location));
 
 
+// jQuery to append the above items to the page
+$('#header').prepend(formattedRole);
+$("#header").prepend(formattedName);
+$('#header').append(formattedPic);
+$('#header').append(formattedWelcomeMsg);
+
+if (bio.skills.length > 0) {
+    $('#header').append(HTMLskillsStart);
+
+    for (skill in bio.skills) {
+        $('#skills').append(HTMLskills.replace('%data%', bio.skills[skill]));
+    }
+}
+
+for (i in formattedContactInfo) {
+    $("#topContacts").append(formattedContactInfo[i]);
+    $("#footerContacts").append(formattedContactInfo[i]);
+}
 
 
+
+// WORK SECTION
+(function displayWork() {
+    for (job in work.jobs) {
+        $('#workExperience').append(HTMLworkStart);
+
+        var formattedEmployer = HTMLworkEmployer.replace('%data%', work.jobs[job].employer);
+        var formattedTitle = HTMLworkTitle.replace('%data%', work.jobs[job].title);
+        var formattedEmployerTitle = formattedEmployer + formattedTitle;
+        $('.work-entry:last').append(formattedEmployerTitle);
+
+        var formattedDate = HTMLworkDates.replace('%data%', work.jobs[job].dates);
+        $('.work-entry:last').append(formattedDate);
+
+        var formattedDescription = HTMLworkDescription.replace('%data%', work.jobs[job].description);
+        $('.work-entry:last').append(formattedDescription);
+    }
+})();
+
+
+
+(function displayProjects() {
+    if (projects.projects.length > 0) {
+        for (i in projects.projects) {
+            $("#projects").append(HTMLprojectStart);
+
+            var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
+            var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].datesWorked);
+            var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
+
+            $(".project-entry:last").append(formattedProjectTitle);
+            $(".project-entry:last").append(formattedProjectDates);
+            $(".project-entry:last").append(formattedProjectDescription);
+
+            for (img in projects.projects[i].images) {
+                var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[img]);
+                $(".project-entry:last").append(formattedProjectImage);
+            }
+
+
+        }
+    }
+})();
+
+
+//$('#main').append(formattedSkills);
+//$('#main').append(formattedWork);
+//$('#main').append(formattedEducation);
 
 /*
 if (bio.skills.length > 0) {

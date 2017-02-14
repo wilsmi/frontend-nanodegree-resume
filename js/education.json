@@ -1,17 +1,28 @@
- var education ={
-     schools: [{
-         name: "Franklin University",
-         location: "Columbus, Ohio",
-         degree: "B.S. Information Technology",
-         majors: ['Information Tech'],
-         dates: 2016 - 03 - 15,
-         url: "www.franklin.edu",
-     }],
-     onlineCourses: [{
-         school: "Udacity",
-         title: "JavaScript",
-         completed: "February 2017",
-         url: "https://classroom.udacity.com/courses/ud804"
-     }],
-     display: function () {}
+ var education = {
+     schools: [
+         {
+             name: "Franklin University",
+             location: "Columbus, Ohio",
+             degree: "B.S. Information Technology",
+             majors: ['Information Technology'],
+             dates: 2014,
+             url: "www.franklin.edu",
+     },
+         {
+             name: "Columbus State",
+             location: "Columbus, Ohio",
+             degree: "A.T. Network Administration",
+             majors: ['Networking', 'Security'],
+             dates: 2011,
+             url: "www.franklin.edu",
+     }
+     ],
+     onlineCourses: [
+         {
+             school: "Udacity",
+             title: "JavaScript",
+             completed: "February 2017",
+             url: "https://classroom.udacity.com/courses/ud804"
+     }
+                    ]
  }
