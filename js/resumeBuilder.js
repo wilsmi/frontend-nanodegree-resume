@@ -111,6 +111,10 @@ for (i in formattedContactInfo) {
     }
 })();
 
+// SKILLS CHART WITH HIGH CHARTS
+$(function () {
+    var chart = new Highcharts.Chart(options);
+});
 
 // Add map with locations
 $('#mapDiv').append(googleMap);
@@ -124,5 +128,3 @@ var charEscape = function (_html) {
 
     return newHTML;
 };
-
-//See this for help https://github.com/cherylcourt/resume/blob/gh-pages/js/resumeBuilder.js
