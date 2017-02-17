@@ -63,7 +63,7 @@ var options = {
         {
             name: 'JavaScript',
             color: 'rgba(247, 223, 30, .5)',
-            data: [[2015, 10], [2016, 8], [2017, 2]]
+            data: [[2015, 10], [2016, 8], [2017, 1]]
  			},
         {
             name: 'HTML5/CSS3',
