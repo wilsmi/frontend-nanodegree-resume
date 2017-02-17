@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAV67yPSjwNXGZ1CCfagMvO-MUiWmJphSE"></script>
+     <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
 </head>
 
 <body>
@@ -25,6 +27,10 @@
         </div>
         <div id="education" class="gray">
             <h2>Education</h2>
+        </div>
+         <div id="skillsChart">
+            <h2>Skills Chart</h2>
+            <div id="container" style="min-width: 310px; height: 400px; max-width: 1200px; margin: 0 auto"></div>
         </div>
         <div id="mapDiv">
             <h2>Where I've Lived and Worked</h2>
@@ -43,6 +49,7 @@
     <script src="js/education.json"></script>
     <script src="js/work.json"></script>
     <script src="js/projects.json"></script>
+    <script src="scripts/json/highCharts.json"></script>
 
     <script src="js/jQuery.js"></script>
     <script src="js/helper.js"></script>
