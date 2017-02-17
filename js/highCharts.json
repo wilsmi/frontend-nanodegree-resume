@@ -1,0 +1,84 @@
+var options = {
+    chart: {
+        renderTo: 'container',
+        type: 'scatter',
+    },
+    title: {
+        text: 'Web Skills & Programming Languages'
+    },
+    xAxis: {
+        title: {
+            text: 'Year (learned/used)'
+        },
+        startOnTick: true,
+        endOnTick: true,
+        allowDecimals: false
+    },
+    yAxis: {
+        title: {
+            text: 'Duration (months)'
+        },
+        allowDecimals: false,
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 100,
+        y: 0,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+        borderWidth: 1
+    },
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+            tooltip: {
+                headerFormat: '<b>{series.name}</b><br>',
+                pointFormat: 'Used in {point.x} for {point.y} month(s)'
+            }
+        }
+    },
+    series: [
+        {
+            name: 'Python',
+            color: 'rgba(119, 152, 191, .5)',
+            data: [[2012, 4], [2014, 3], [2016, 1]]
+ 			},
+        {
+            name: 'JavaScript',
+            color: 'rgba(204, 0, 0, .5)',
+            data: [[2015, 10], [2016, 8], [2017, 2]]
+ 			},
+        {
+            name: 'HTML5/CSS3',
+            color: 'rgba(153, 51, 0, .5)',
+            data: [[2015, 5], [2016, 4]]
+ 			},
+        {
+            name: 'Web Development',
+            color: 'rgba(0, 153, 102, .5)',
+            data: [[2015, 2], [2016, 5], [2017, 2]]
+    },
+        {
+            name: 'SQL',
+            color: 'rgba(119, 152, 80, .5)',
+            data: [[2013, 4][2014, 7]]
+ 			},
+    ]
+};
