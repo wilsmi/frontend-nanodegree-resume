@@ -5,14 +5,14 @@ var work = {
             title: "Consultant",
             location: "Westerville, Ohio",
             dates: "October 2014 - Present",
-            description: "Sogeti Consultant in the Cloud Practice with more than 7 years of experience in service level management leveraging the complete range of ITIL practices. He is a certified ServiceNow Systems Administrator and ITIL Foundations holder that has led teams in areas of Incident, Problem, Change, and Release management utilizing the ServiceNow platform. He has developed enterprise-level solutions with the ServiceNow platform to solve complex business problems by integrating/upgrading processes and procedures."
+            description: "Served as the lead ServiceNow administrator/developer for a goods & services company. Collaborated with the service desk to double their resolution rate - resolving 42,000+ issues in 3 months; as well as single-handedly coordinated work with entire offshore teams to start up an Oracle-based project.  Responsible for successfully leading two teams of Exchange admins to create and implement SOP documentation – which increased new hire ramp-up velocity by 400% - in addition to working with the ServiceNow administrators to design and build new templates and forms into the platform which allowed for a cost savings of $3 per incident / month; this equates to roughly $24,000 per month in savings.",
         },
         {
             employer: "Cardinal Health",
             title: "Nuclear Analyst",
             location: "Dublin, Ohio",
             dates: "June 2009 – October 2014",
-            description: "Resolved an average of 33 issues weekly for 160 pharmacies nationwide. Resolved ~38 issues per week for thousands of customers serviced by Cardinal Health nuclear pharmacies."
+            description: "Led the team of 12 as a SME to resolve an average of 33 issues weekly for 160 pharmacies nationwide. Resolved ~38 issues per week for thousands of customers serviced by Cardinal Health nuclear pharmacies. Developed ad-hoc, SQL developed reports for both customers and troubleshooting. Improved call flow and increased phone productivity by participating in the Six Sigma Scripting Kaizen. Generated and streamlined printer installation process and increased customer satisfaction by co-developing a script to facilitate installations for production affecting printers across 160 nuclear pharmacies."
     },
         {
             employer: "U.S. Air Force",
