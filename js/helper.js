@@ -34,7 +34,7 @@ var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
-var HTMLschoolFocus = "&nbsp; &frasl; &nbsp;<em>Minor: %data%</em>"
+var HTMLschoolFocus = "&nbsp; &frasl; &nbsp;<em>Area of focus: %data%</em>"
 
 var HTMLonlineClasses = "<h3 class='online-classes'>Online Classes</h3>";
 var HTMLonlineTitle = '<a href="#">%data%';
