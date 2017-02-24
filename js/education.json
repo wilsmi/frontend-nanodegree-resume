@@ -5,7 +5,7 @@
              location: "Columbus, Ohio",
              degree: "B.S. Information Technology",
              major: ['Information Technology'],
-             minor: ['Windows Server'],
+             focusArea: ['Windows Server'],
              datesAttended: 2014,
              url: "www.franklin.edu",
      },
@@ -14,7 +14,7 @@
              location: "Columbus, Ohio",
              degree: "A.T. Network Administration",
              major: ['Networking'],
-             minor: ['Security'],
+             focusArea: ['Security'],
              datesAttended: 2011,
              url: "http://www.cscc.edu/",
      }
