@@ -84,13 +84,13 @@ for (i in formattedContactInfo) {
             var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].datesAttended);
             var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
             var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
-            var formattedSchoolMinor = HTMLschoolMinor.replace("%data%", education.schools[i].minor);
+            var formattedSchoolFocus = HTMLschoolFocus.replace("%data%", education.schools[i].focusArea);
 
             $(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree);
             $(".education-entry:last").append(formattedSchoolDates);
             $(".education-entry:last").append(formattedSchoolLocation);
             $(".education-entry:last").append(formattedSchoolMajor);
-            $(".education-entry:last").append(formattedSchoolMinor);
+            $(".education-entry:last").append(formattedSchoolFocus);
         }
 
         if (education.onlineCourses.length > 0) {
