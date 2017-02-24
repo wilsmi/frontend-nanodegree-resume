@@ -41,10 +41,8 @@
             </ul>
         </div>
     </div>
-
-    <!-- "Javascript assets, by default, tend to block any other parallel downloads from occurring. So, you can imagine if you have plenty of <script> tags in the head, calling on multiple external scripts will block the HTML from loading, thus greeting the user with a blank white screen, because no other content on your page will load until the JS files have completely loaded."
-    http://stackoverflow.com/questions/4396849/does-the-script-tag-position-in-html-affects-performance-of-the-webpage -->
-
+    
+<!-- Scripts and files -->
     <script src="js/bio.json"></script>
     <script src="js/education.json"></script>
     <script src="js/work.json"></script>
@@ -55,21 +53,7 @@
     <script src="js/helper.js"></script>
     <script src="js/resumeBuilder.js"></script>
 
-
-    <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
-  -->
-
     <script>
-        // Notice how all of a sudden there's JavaScript inside this HTML document?
-        // You can write JavaScript between <script> tags. At the end of your
-        // JavaScript, don't forget the closing script tag with the slash (/).
-
-
         if (document.getElementsByClassName('flex-item').length === 0) {
             document.getElementById('topContacts').style.display = 'none';
         }
