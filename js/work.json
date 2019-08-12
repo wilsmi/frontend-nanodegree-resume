@@ -1,10 +1,17 @@
 var work = {
     jobs: [
+         {
+            employer: "Cerna Solutions",
+            title: "Technical Consultant",
+            location: "Columbus, Ohio",
+            dates: "June 2017 - Present",
+            description: "Consulted with companies from various business sectors (Financial, Defense Contracting, Healthcare) in the areas of:Consulted with companies from various business sectors (Financial, Defense Contracting, Healthcare) in the areas of: Major Incident Management, Service Catalog, Service Portal, Change Management, Project Portfolio Suite, ITOM, Knowledge Management. Participated in various podcasts and webinars on topics ranging from empowering your admin, panel discussion about Service Portal, Customizations and how to not over customize.",
+        },
         {
             employer: "Sogeti USA",
-            title: "Consultant",
+            title: "IT Consultant",
             location: "Westerville, Ohio",
-            dates: "October 2014 - Present",
+            dates: "October 2014 - June 2017",
             description: "Served as the lead ServiceNow administrator/developer for a goods & services company. Collaborated with the service desk to double their resolution rate - resolving 42,000+ issues in 3 months; as well as single-handedly coordinated work with entire offshore teams to start up an Oracle-based project.  Responsible for successfully leading two teams of Exchange admins to create and implement SOP documentation – which increased new hire ramp-up velocity by 400% - in addition to working with the ServiceNow administrators to design and build new templates and forms into the platform which allowed for a cost savings of $3 per incident / month; this equates to roughly $24,000 per month in savings.",
         },
         {
