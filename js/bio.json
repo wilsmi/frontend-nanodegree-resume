@@ -1,6 +1,6 @@
 var bio = {
     name: "William Smith",
-    role: "ServiceNow admin/dev",
+    role: "ServiceNow Developer/Admin/UI/UX",
     contacts: {
         email: "william.smith3@gmail.com",
         github: "wilsmi",
@@ -8,6 +8,6 @@ var bio = {
         location: "Columbus, Ohio"
     },
     biopic: "images/niceme_bg-BW.jpg",
-    welcomeMessage: "I'm currently working as an IT Consultant for Sogeti USA.  Thanks for stopping by!",
-    skills: ['HTML5/CSS3/JavaScript; Angular', 'ITIL Foundations', 'Agile methodology', 'Six Sigma Yellow Belt'],
+    welcomeMessage: "I'm currently working as a Technical Consultant for Cerna Solutions.  Thanks for stopping by!",
+    skills: ['HTML5/CSS3/JavaScript','Angular JS', 'ITIL Foundations v3', 'Agile', 'Six Sigma Yellow Belt'],
 };
